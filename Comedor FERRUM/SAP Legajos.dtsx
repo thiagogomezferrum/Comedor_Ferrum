@@ -1,0 +1,2519 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/12/2023 1:08:09 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="FERRUM\pconnon"
+  DTS:DTSID="{2E835818-DA43-42D2-BFFF-6EC619DEC79C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{03359F96-CF74-4F65-8E98-4068D48154E7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Maestro de Empleados]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E5420FDD-36DC-4EAF-9668-590F25B9AC4F}"
+      DTS:ObjectName="Maestro de Empleados">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\fe-files01\SAP-SSFF\Maestro_Empleados.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LEGAJO"
+              DTS:DTSID="{E3CDCB8D-4C70-4F12-8ABA-89DA0B76B1AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="APE"
+              DTS:DTSID="{0806FE13-3521-4997-8980-7685C88708D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOM"
+              DTS:DTSID="{9E36069A-2622-4D92-AB3D-6F783E70B415}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FINI"
+              DTS:DTSID="{3DFA0088-BE75-4AAB-A002-6B76104486F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODEM"
+              DTS:DTSID="{10D38350-27CE-4A0F-BF1F-1BA8A74C706B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMEM"
+              DTS:DTSID="{A69AF04D-FA0F-4994-BB11-74285C6F0B70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCOSTO"
+              DTS:DTSID="{956A117C-EE31-4C22-A534-41A79E42299F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNINEC"
+              DTS:DTSID="{909DA4E0-D484-4C87-A989-C2A8588A779B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNINEN"
+              DTS:DTSID="{E530BCBD-E28D-457A-A144-B5986AA1EAEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GCIAC"
+              DTS:DTSID="{70FBDC3D-025A-4CD8-AF1A-5F142C583993}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GCIAN"
+              DTS:DTSID="{7AFD2F09-0BC3-4EF0-B32C-1CE1867EEEEE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DPTOC"
+              DTS:DTSID="{8E34291D-BE41-4A25-8BED-C5C060D43405}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DPTON"
+              DTS:DTSID="{1623ACC0-70BD-46B9-851B-382D3B4273EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SECTC"
+              DTS:DTSID="{EF29FB21-C028-476B-A323-C0B56BA1FD05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SECTN"
+              DTS:DTSID="{32C27F3D-5C80-4B44-9958-2A37420AA442}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NROTAR"
+              DTS:DTSID="{3567372A-2600-4B78-88DF-15FA8A2833FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLASEM"
+              DTS:DTSID="{8DB8CDF9-1C5A-4DEE-A0C9-E9A07611A481}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPLIQ"
+              DTS:DTSID="{9F2F868E-44A4-420C-84A7-F0056E979CD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPLIN"
+              DTS:DTSID="{8A2C5488-1F41-4904-BC15-1210D96BB7F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EVENT"
+              DTS:DTSID="{5A7C7BE6-0E7B-427B-A1AC-00D444618302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EVENTR"
+              DTS:DTSID="{AFC12C76-7E5B-481C-8601-09BB139B1B95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSIT"
+              DTS:DTSID="{34C2014E-2DFC-40DA-A2BD-B80396A5EAAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JOBCLS"
+              DTS:DTSID="{5AA94F3E-A258-40E5-8EFB-108098E8AA77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FABRIC"
+              DTS:DTSID="{B63B5980-4238-40A6-A947-BA51DA1F77C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FABRIN"
+              DTS:DTSID="{D21BC973-5144-4CDC-AEAC-159C6B3691E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CONVC"
+              DTS:DTSID="{7722A6E7-92E8-4A96-9333-90C54FBEFF30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CONVN"
+              DTS:DTSID="{80603258-96C4-4D81-8DFA-0BAB4C890871}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSAC"
+              DTS:DTSID="{06007DCD-A52D-499B-9453-4AC2EAA001AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSAN"
+              DTS:DTSID="{ADCB0EDE-8D9A-467F-A639-A5D0B3D3CFAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSGC"
+              DTS:DTSID="{DB02F202-0778-44C5-A0B6-F4E06434E402}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSGN"
+              DTS:DTSID="{8F3C871A-E4C1-4925-90F3-B89E33E9A1F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEG"
+              DTS:DTSID="{95CD5137-2871-4210-9FA5-87A3F9F5B3C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGN"
+              DTS:DTSID="{9F8F77BF-42C5-4050-B77E-2C3293DA7C8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUIL"
+              DTS:DTSID="{E47B848E-6781-4853-82C6-C7AF5ADCA4F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMUSR"
+              DTS:DTSID="{2A5C8A82-BDBB-4F9B-BAC5-D335F0A61B45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FBAJA"
+              DTS:DTSID="{6507030F-2A6D-4081-AC20-BC24FAA30781}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PGCIC"
+              DTS:DTSID="{59D0E87A-35C1-4A72-9213-06745A3A227F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PGCIN"
+              DTS:DTSID="{38DC6B4E-58BB-40E3-BE7A-C6A392B5257C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLASE2"
+              DTS:DTSID="{DB48E339-213A-4ADD-A9F3-FA6D1312DD3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORTRC"
+              DTS:DTSID="{2B1C6E42-EA9E-4E16-B423-078B6094A33C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORTRN"
+              DTS:DTSID="{80F2AD8F-2B43-4912-89B7-5709512A44CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PRTC"
+              DTS:DTSID="{60F440B9-3744-4BFC-91EF-737DBAF058F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PRTN"
+              DTS:DTSID="{9D01FF9B-B8AB-4802-A017-E5DF4E86BECB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPFIC"
+              DTS:DTSID="{D8059468-F27A-46A4-AA37-E1FC79F1AC91}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Tabla Paridad - Tipo Liquidación]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A97DA5A5-0472-431D-95DE-445344B98883}"
+      DTS:ObjectName="Tabla Paridad - Tipo Liquidación">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\fe-files01\SAP-SSFF\Maestro_Empleados - Tablas Paridad.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\EXEC SAP_LEGAJOS_UPSERT"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{165F6C5B-DDF4-4BC5-82D7-7A8D56FF2255}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EXEC SAP_LEGAJOS_UPSERT"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6ECCDA00-0FC0-4F13-8A6F-E903826C2AB6}"
+          SQLTask:SqlStatementSource="exec SAP_LEGAJOS_UPSERT" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E8DCD17F-6940-49C0-A6E3-404FC93790B1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6ECCDA00-0FC0-4F13-8A6F-E903826C2AB6}"
+          SQLTask:SqlStatementSource="truncate table SAP_Legajos&#xA;truncate table SAP_Paridad_Liquidaciones" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tablas Paridad"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{6B431CAB-6A4C-4BDC-AB59-898A9D8A9F9E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tablas Paridad"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tablas Paridad\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'Tipo de Liquidacion$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tablas Paridad\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Tabla Paridad - Tipo Liquidación]"
+                  connectionManagerRefId="Package.ConnectionManagers[Tabla Paridad - Tipo Liquidación]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[COD_SAP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_SAP]"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[COD_SAP]"
+                      name="COD_SAP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[DECR_SAP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[DECR_SAP]"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[DECR_SAP]"
+                      name="DECR_SAP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[TIPO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[TIPO]"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[TIPO]"
+                      name="TIPO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[DECR_TIPO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[DECR_TIPO]"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[DECR_TIPO]"
+                      name="DECR_TIPO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_SAP]"
+                      dataType="wstr"
+                      length="255"
+                      name="COD_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[DECR_SAP]"
+                      dataType="wstr"
+                      length="255"
+                      name="DECR_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[TIPO]"
+                      dataType="wstr"
+                      length="255"
+                      name="TIPO" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].ExternalColumns[DECR_TIPO]"
+                      dataType="wstr"
+                      length="255"
+                      name="DECR_TIPO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[COD_SAP]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[COD_SAP]"
+                      name="COD_SAP" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[DECR_SAP]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[DECR_SAP]"
+                      name="DECR_SAP" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[TIPO]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[TIPO]"
+                      name="TIPO" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[DECR_TIPO]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[DECR_TIPO]"
+                      name="DECR_TIPO" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tablas Paridad\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SAP_Paridad_Liquidaciones]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tablas Paridad\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{6ECCDA00-0FC0-4F13-8A6F-E903826C2AB6}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Fer-sql01-vr.COMEDOR_FERRUM_DEV.comedor_rw]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COD_SAP]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="COD_SAP"
+                      externalMetadataColumnId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_SAP]"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[COD_SAP]" />
+                    <inputColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DECR_SAP]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="DECR_SAP"
+                      externalMetadataColumnId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DECR_SAP]"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[DECR_SAP]" />
+                    <inputColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="TIPO"
+                      externalMetadataColumnId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO]"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[TIPO]" />
+                    <inputColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DECR_TIPO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="DECR_TIPO"
+                      externalMetadataColumnId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DECR_TIPO]"
+                      lineageId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output].Columns[DECR_TIPO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_SAP]"
+                      dataType="wstr"
+                      length="255"
+                      name="COD_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DECR_SAP]"
+                      dataType="wstr"
+                      length="255"
+                      name="DECR_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO]"
+                      dataType="wstr"
+                      length="255"
+                      name="TIPO" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DECR_TIPO]"
+                      dataType="wstr"
+                      length="255"
+                      name="DECR_TIPO" />
+                    <externalMetadataColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tablas Paridad\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tablas Paridad\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tablas Paridad\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tablas Paridad\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tablas Paridad.Paths[Excel Source Output]"
+              endId="Package\Tablas Paridad\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Tablas Paridad\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\UPLOAD CSV LEGAJOS"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{161B488C-48A4-49CB-BE96-2FCEC8465D99}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="UPLOAD CSV LEGAJOS"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\UPLOAD CSV LEGAJOS\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Maestro de Empleados]"
+                  connectionManagerRefId="Package.ConnectionManagers[Maestro de Empleados]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[LEGAJO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LEGAJO]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[LEGAJO]"
+                      name="LEGAJO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOM]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOM]"
+                      name="NOM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[APE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[APE]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[APE]"
+                      name="APE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FINI]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FINI]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FINI]"
+                      name="FINI"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CODEM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODEM]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CODEM]"
+                      name="CODEM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOMEM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMEM]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOMEM]"
+                      name="NOMEM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CCOSTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CCOSTO]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CCOSTO]"
+                      name="CCOSTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[UNINEC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNINEC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[UNINEC]"
+                      name="UNINEC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[UNINEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNINEN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[UNINEN]"
+                      name="UNINEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[GCIAC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GCIAC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[GCIAC]"
+                      name="GCIAC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[GCIAN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GCIAN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[GCIAN]"
+                      name="GCIAN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[DPTOC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DPTOC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[DPTOC]"
+                      name="DPTOC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[DPTON]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DPTON]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[DPTON]"
+                      name="DPTON"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[SECTC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SECTC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[SECTC]"
+                      name="SECTC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[SECTN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SECTN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[SECTN]"
+                      name="SECTN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NROTAR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NROTAR]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NROTAR]"
+                      name="NROTAR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CLASEM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASEM]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CLASEM]"
+                      name="CLASEM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPLIQ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPLIQ]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPLIQ]"
+                      name="TIPLIQ"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPLIN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPLIN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPLIN]"
+                      name="TIPLIN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[EVENT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EVENT]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[EVENT]"
+                      name="EVENT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[EVENTR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EVENTR]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[EVENTR]"
+                      name="EVENTR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[POSIT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSIT]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[POSIT]"
+                      name="POSIT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[JOBCLS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JOBCLS]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[JOBCLS]"
+                      name="JOBCLS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FABRIC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FABRIC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FABRIC]"
+                      name="FABRIC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FABRIN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FABRIN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FABRIN]"
+                      name="FABRIN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CONVC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONVC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CONVC]"
+                      name="CONVC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CONVN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONVN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CONVN]"
+                      name="CONVN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSAC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSAC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSAC]"
+                      name="PSAC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSAN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSAN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSAN]"
+                      name="PSAN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSGC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSGC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSGC]"
+                      name="PSGC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSGN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSGN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PSGN]"
+                      name="PSGN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CATEG]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CATEG]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CATEG]"
+                      name="CATEG"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CATEGN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CATEGN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CATEGN]"
+                      name="CATEGN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CUIL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CUIL]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CUIL]"
+                      name="CUIL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOMUSR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMUSR]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOMUSR]"
+                      name="NOMUSR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FBAJA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FBAJA]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FBAJA]"
+                      name="FBAJA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PGCIC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PGCIC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PGCIC]"
+                      name="PGCIC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PGCIN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PGCIN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PGCIN]"
+                      name="PGCIN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CLASE2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASE2]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[CLASE2]"
+                      name="CLASE2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[HORTRC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HORTRC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[HORTRC]"
+                      name="HORTRC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[HORTRN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HORTRN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[HORTRN]"
+                      name="HORTRN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PRTC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRTC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PRTC]"
+                      name="PRTC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PRTN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRTN]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[PRTN]"
+                      name="PRTN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPFIC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPFIC]"
+                      length="100"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPFIC]"
+                      name="TIPFIC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LEGAJO]"
+                      dataType="wstr"
+                      length="100"
+                      name="LEGAJO" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOM]"
+                      dataType="wstr"
+                      length="100"
+                      name="NOM" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[APE]"
+                      dataType="wstr"
+                      length="100"
+                      name="APE" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FINI]"
+                      dataType="wstr"
+                      length="100"
+                      name="FINI" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODEM]"
+                      dataType="wstr"
+                      length="100"
+                      name="CODEM" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMEM]"
+                      dataType="wstr"
+                      length="100"
+                      name="NOMEM" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CCOSTO]"
+                      dataType="wstr"
+                      length="100"
+                      name="CCOSTO" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNINEC]"
+                      dataType="wstr"
+                      length="100"
+                      name="UNINEC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNINEN]"
+                      dataType="wstr"
+                      length="100"
+                      name="UNINEN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GCIAC]"
+                      dataType="wstr"
+                      length="100"
+                      name="GCIAC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GCIAN]"
+                      dataType="wstr"
+                      length="100"
+                      name="GCIAN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DPTOC]"
+                      dataType="wstr"
+                      length="100"
+                      name="DPTOC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DPTON]"
+                      dataType="wstr"
+                      length="100"
+                      name="DPTON" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SECTC]"
+                      dataType="wstr"
+                      length="100"
+                      name="SECTC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SECTN]"
+                      dataType="wstr"
+                      length="100"
+                      name="SECTN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NROTAR]"
+                      dataType="wstr"
+                      length="100"
+                      name="NROTAR" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASEM]"
+                      dataType="wstr"
+                      length="100"
+                      name="CLASEM" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPLIQ]"
+                      dataType="wstr"
+                      length="100"
+                      name="TIPLIQ" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPLIN]"
+                      dataType="wstr"
+                      length="100"
+                      name="TIPLIN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EVENT]"
+                      dataType="wstr"
+                      length="100"
+                      name="EVENT" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EVENTR]"
+                      dataType="wstr"
+                      length="100"
+                      name="EVENTR" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSIT]"
+                      dataType="wstr"
+                      length="100"
+                      name="POSIT" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JOBCLS]"
+                      dataType="wstr"
+                      length="100"
+                      name="JOBCLS" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FABRIC]"
+                      dataType="wstr"
+                      length="100"
+                      name="FABRIC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FABRIN]"
+                      dataType="wstr"
+                      length="100"
+                      name="FABRIN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONVC]"
+                      dataType="wstr"
+                      length="100"
+                      name="CONVC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONVN]"
+                      dataType="wstr"
+                      length="100"
+                      name="CONVN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSAC]"
+                      dataType="wstr"
+                      length="100"
+                      name="PSAC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSAN]"
+                      dataType="wstr"
+                      length="100"
+                      name="PSAN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSGC]"
+                      dataType="wstr"
+                      length="100"
+                      name="PSGC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PSGN]"
+                      dataType="wstr"
+                      length="100"
+                      name="PSGN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CATEG]"
+                      dataType="wstr"
+                      length="100"
+                      name="CATEG" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CATEGN]"
+                      dataType="wstr"
+                      length="100"
+                      name="CATEGN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CUIL]"
+                      dataType="wstr"
+                      length="100"
+                      name="CUIL" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMUSR]"
+                      dataType="wstr"
+                      length="100"
+                      name="NOMUSR" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FBAJA]"
+                      dataType="wstr"
+                      length="100"
+                      name="FBAJA" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PGCIC]"
+                      dataType="wstr"
+                      length="100"
+                      name="PGCIC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PGCIN]"
+                      dataType="wstr"
+                      length="100"
+                      name="PGCIN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASE2]"
+                      dataType="wstr"
+                      length="100"
+                      name="CLASE2" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HORTRC]"
+                      dataType="wstr"
+                      length="100"
+                      name="HORTRC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HORTRN]"
+                      dataType="wstr"
+                      length="100"
+                      name="HORTRN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRTC]"
+                      dataType="wstr"
+                      length="100"
+                      name="PRTC" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRTN]"
+                      dataType="wstr"
+                      length="100"
+                      name="PRTN" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPFIC]"
+                      dataType="wstr"
+                      length="100"
+                      name="TIPFIC" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SAP_Legajos]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{6ECCDA00-0FC0-4F13-8A6F-E903826C2AB6}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Fer-sql01-vr.COMEDOR_FERRUM_DEV.comedor_rw]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LEGAJO]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="LEGAJO"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Legajo]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[LEGAJO]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOM]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="NOM"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOM]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[APE]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="APE"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Apellido]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[APE]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NROTAR]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="NROTAR"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tarjeta]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NROTAR]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FABRIN]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FABRIN"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Planta]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[FABRIN]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMEM]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="NOMEM"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[NOMEM]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPLIQ]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="TIPLIQ"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Liquidacion]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[TIPLIQ]" />
+                    <inputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EVENT]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="EVENT"
+                      externalMetadataColumnId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Evento]"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output].Columns[EVENT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
+                      dataType="wstr"
+                      length="100"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Apellido]"
+                      dataType="wstr"
+                      length="100"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Legajo]"
+                      dataType="wstr"
+                      length="100"
+                      name="Legajo" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tarjeta]"
+                      dataType="wstr"
+                      length="100"
+                      name="Tarjeta" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Planta]"
+                      dataType="wstr"
+                      length="100"
+                      name="Planta" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Liquidacion]"
+                      dataType="wstr"
+                      length="100"
+                      name="Liquidacion" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                      dataType="wstr"
+                      length="100"
+                      name="Empresa" />
+                    <externalMetadataColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Evento]"
+                      dataType="wstr"
+                      length="100"
+                      name="Evento" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\UPLOAD CSV LEGAJOS.Paths[Flat File Source Output]"
+              endId="Package\UPLOAD CSV LEGAJOS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\UPLOAD CSV LEGAJOS\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3FCEA09D-B460-43C3-AE31-F987B0E6579B}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\UPLOAD CSV LEGAJOS" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{FB38E06E-D01D-4497-860F-38E23006EC8F}"
+      DTS:From="Package\UPLOAD CSV LEGAJOS"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Tablas Paridad" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{FEF50F5C-4F9B-4647-A267-DBC211B558AA}"
+      DTS:From="Package\Tablas Paridad"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\EXEC SAP_LEGAJOS_UPSERT" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="241,42"
+          Id="Package\EXEC SAP_LEGAJOS_UPSERT"
+          TopLeft="28,217" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="65,16" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Tablas Paridad"
+          TopLeft="71,151" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\UPLOAD CSV LEGAJOS"
+          TopLeft="49,81" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="150.25,58">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23"
+              Start="0,0"
+              End="0,15.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="149,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="148,193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tablas Paridad">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Tablas Paridad\OLE DB Destination"
+          TopLeft="437,106" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Tablas Paridad\Excel Source"
+          TopLeft="146,54" />
+        <EdgeLayout
+          Id="Package\Tablas Paridad.Paths[Excel Source Output]"
+          TopLeft="290,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="147,52"
+              Start="0,0"
+              End="139.5,52">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.5,0"
+                    Point2="73.5,0"
+                    Point3="73.5,4" />
+                  <mssgle:LineSegment
+                    End="73.5,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.5,48"
+                    Point2="73.5,52"
+                    Point3="77.5,52" />
+                  <mssgle:LineSegment
+                    End="139.5,52" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tablas Paridad\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tablas Paridad\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\UPLOAD CSV LEGAJOS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\UPLOAD CSV LEGAJOS\OLE DB Destination"
+          TopLeft="491,91" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\UPLOAD CSV LEGAJOS\Flat File Source"
+          TopLeft="148,85" />
+        <EdgeLayout
+          Id="Package\UPLOAD CSV LEGAJOS.Paths[Flat File Source Output]"
+          TopLeft="304,109">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187,0"
+              Start="0,0"
+              End="179.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="179.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\UPLOAD CSV LEGAJOS\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

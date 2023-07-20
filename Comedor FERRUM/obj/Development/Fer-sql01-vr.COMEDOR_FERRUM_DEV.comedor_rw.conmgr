@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Fer-sql01-vr.COMEDOR_FERRUM_DEV.comedor_rw"
+  DTS:DTSID="{6ECCDA00-0FC0-4F13-8A6F-E903826C2AB6}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=Fer-sql01-vr;User ID=comedor_rw;Initial Catalog=COMEDOR_FERRUM_PRD;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Comedor FERRUM-{6ECCDA00-0FC0-4F13-8A6F-E903826C2AB6}Fer-sql01-vr.COMEDOR_FERRUM_DEV.comedor_rw;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn5+MDSN7MUaRhbd3z2xH3gAAAAACAAAAAAADZgAAwAAAABAAAABwlwpgrxgC1YamXe7dESFmAAAAAASAAACgAAAAEAAAADP0NoyXjztAOqrzjLL2ZkeAAAAAR85ajtI1ne1GxNOka54RVCM8DQL4f1hsmsy14Fdq2ecUOewjbmkORGnFSD8j/THynh2sat5FBYG8y40VuiIYd9RZvHUwmJBmxW9HOVxN/8695lYKViYBa/1n37iMBzrg9VnRQWSEPM54xmTcXn/EUO6oDOXcT9yLtaYUz7N3ERwUAAAAbx4PPgEl1SrgGF8u3IlAaK78EuA=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
